@@ -1,0 +1,76 @@
+<div
+  style="margin-left: 27px"
+  class="container mt-5 mb-5 d-flex justify-content-center"
+>
+  <div class="card px-1 py-4" style="border-radius: 10px">
+    <div class="card-body">
+      <h6
+        style="font-weight: bolder; color: #7fad39; margin-left: 110px"
+        class="card-title mb-3"
+      >
+        Add Product in Category
+      </h6>
+      <div class="row">
+        <div class="col-sm-12" style="margin-bottom: 8px">
+          <div class="form-group">
+            <input
+              [(ngModel)]="item.name"
+              class="form-control"
+              placeholder="Name"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group" style="margin-bottom: 8px">
+            <div class="input-group">
+              <input
+                [(ngModel)]="item.Price"
+                #Price
+                class="form-control"
+                placeholder="Price"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="margin-bottom: 8px"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" style="margin-bottom: 8px">
+          <div class="form-group">
+            <div class="input-group">
+              <input
+                #Description
+                type="text"
+                class="form-control"
+                placeholder="Description"
+                [(ngModel)]="item.Description"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column text-center px-5 mt-3 mb-3">
+        <small class="agree-text"
+          >By Booking this appointment you agree to the</small
+        >
+        <a href="#" class="terms">Terms & Conditions</a>
+      </div>
+      <button
+        style="
+          background-color: #7fad39;
+          border-color: transparent;
+          width: 50%;
+          margin-left: 94px;
+        "
+        (click)="update()"
+        class="btn btn-primary btn-block confirm-button"
+      >
+        Update
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.new li a {
+  color: black;
+}
+
+ul li a {
+  text-decoration: none;
+}
